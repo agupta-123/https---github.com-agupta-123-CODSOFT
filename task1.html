@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Landing Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1b1b1b;
+            color: #ffffff;
+        }
+
+        .header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff4757;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ff4757;
+        }
+
+        .hero {
+            background-image: url('https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff4757;
+        }
+
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .hero-content .btn {
+            padding: 15px 30px;
+            background-color: #ff4757;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero-content .btn:hover {
+            background-color: #ff6b81;
+        }
+
+        .music-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .music-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #ff4757;
+        }
+
+        .album {
+            display: inline-block;
+            margin: 0 20px;
+            max-width: 200px;
+        }
+
+        .album img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .album img:hover {
+            transform: scale(1.05);
+        }
+
+        .album-title {
+            margin-top: 10px;
+            font-size: 18px;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">MusicWave</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Feel the Rhythm of Music</h1>
+            <p>Discover new tracks and enjoy your favorite tunes</p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="music-section">
+        <h2>Genre Categories</h2>
+        <div class="album">
+            <img src="https://www.shutterstock.com/image-photo/stylish-fashion-teenager-model-wearing-260nw-1678390384.jpg" alt="Album 1">
+            <div class="album-title">Pop</div>
+        </div>
+        <div class="album">
+            <img src="https://cdn.pixabay.com/photo/2018/05/18/22/13/dancer-3412214_640.jpg" alt="Album 2">
+            <div class="album-title">Hip Hop</div>
+        </div>
+        <div class="album">
+            <img src="https://media.istockphoto.com/id/1330032278/photo/a-handcrafted-metal-artifact-made-by-rajasthani-women-at-a-cottage-industry-depicting-hindu.jpg?s=612x612&w=0&k=20&c=TbhUsykS8vOJlpWkvoup1hk4e3tN1wSSCNGzyW-BIoQ=" alt="Album 3">
+            <div class="album-title">Classical</div>
+        </div>
+    </section>
+</body>
+</html>
